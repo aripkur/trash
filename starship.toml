@@ -1,0 +1,49 @@
+
+
+# Starship minimal prompt config
+add_newline = false
+command_timeout = 1000
+
+# Format utama prompt
+format = """$directory$git_branch$git_status$nodejs$rust$python$time$character """
+
+# Direktori (tampilkan path pendek)
+[directory]
+truncation_length = 3
+style = "bold cyan"
+format = "[$path]($style) "
+
+# Git
+[git_branch]
+symbol = ""
+style = "bold yellow"
+format = "[$symbol $branch]($style) "
+
+[git_status]
+style = "dimmed green"
+format = "[$all_status$ahead_behind]($style) "
+
+# Bahasa
+[nodejs]
+symbol = ""
+format = "[$symbol $version](bold green) "
+
+[rust]
+symbol = ""
+format = "[$symbol $version](bold red) "
+
+[python]
+symbol = ""
+format = "[$symbol $version](bold blue) "
+
+# Waktu (opsional, non-intrusif)
+[time]
+disabled = false
+time_format = "%H:%M"
+format = "[$time](dimmed white) "
+
+# Karakter prompt
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vicmd_symbol = "[❮](bold yellow)"
