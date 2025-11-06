@@ -1,9 +1,9 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 28,
-  "margin": 8,
-  "modules-left": ["clock#date", "clock#time", "custom/memory", "custom/network-speed"],
+  "height": 26,
+  "margin": 5,
+  "modules-left": ["clock#date", "custom/memory", "custom/network-speed"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["battery", "pulseaudio", "network"],
 
@@ -11,12 +11,7 @@
   // LEFT SECTION
   // =========================
   "clock#date": {
-    "format": "󰸘 {:%a, %d %b %Y}",
-    "tooltip": false
-  },
-  "clock#time": {
-    "format": " {:%H:%M:%S}",
-    "interval": 1,
+    "format": "󰸘 {:%a, %d %b %Y, %H:%M}",
     "tooltip": false
   },
 "custom/memory": {
