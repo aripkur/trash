@@ -24,10 +24,11 @@
     "interval": 5,
     "exec": "free | awk '/Mem/ {printf(\"%.0f\", $3/$2 * 100)}'"
   },
-  "network#speed": {
+  "custom/network-speed": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/network.sh",
     "interval": 1,
-    "format": " {downspeed}  {upspeed}",
-    "tooltip": false
+    "tooltip": false,
   },
 
   // =========================
