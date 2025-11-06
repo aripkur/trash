@@ -28,7 +28,7 @@
     "format": "{}",
     "exec": "~/.config/waybar/scripts/network.sh",
     "interval": 1,
-    "tooltip": false,
+    "tooltip": false
   },
 
   // =========================
@@ -39,7 +39,7 @@
     "all-outputs": true,
     "format": "{icon}",
     "format-icons": {
-      "default": ""
+      "default": "",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -53,7 +53,7 @@
       "2": [],
       "3": [],
       "4": [],
-      "5": [],
+      "5": []
     }
   },
 
