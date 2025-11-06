@@ -19,10 +19,11 @@
     "interval": 1,
     "tooltip": false
   },
-  "custom/memory": {
-    "format": "󰍛 {used:0.1f}G/{total:0.1f}G",
+"custom/memory": {
+    "format": " {}",
     "interval": 5,
-  },
+    "exec": "free -h | awk '/Mem:/ {print $3\" / \"$2}'"
+},
   "custom/network-speed": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/network.sh",

@@ -29,13 +29,7 @@ window#waybar {
 #battery,
 #pulseaudio,
 #network,
-#custom-memory {
-  padding: 4px 10px;
-  margin: 3px 5px;
-  border-radius: 10px;
-  background: rgba(40, 40, 40, 0.85);
-}
-
+#custom-memory,
 #custom-network-speed{
   padding: 4px 10px;
   margin: 3px 5px;
