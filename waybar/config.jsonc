@@ -3,7 +3,7 @@
   "position": "top",
   "height": 28,
   "margin": 8,
-  "modules-left": ["clock#date", "clock#time", "custom/memory", "network#speed"],
+  "modules-left": ["clock#date", "clock#time", "custom/memory", "custom/network-speed"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["battery", "pulseaudio", "network"],
 
