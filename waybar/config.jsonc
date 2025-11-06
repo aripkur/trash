@@ -1,0 +1,81 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "margin": 8,
+  "modules-left": ["clock#date", "clock#time", "custom/memory", "network#speed"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["battery", "pulseaudio", "network"],
+
+  // =========================
+  // LEFT SECTION
+  // =========================
+  "clock#date": {
+    "format": "󰸘 {:%a, %d %b %Y}",
+    "tooltip": false
+  },
+  "clock#time": {
+    "format": " {:%H:%M:%S}",
+    "interval": 1,
+    "tooltip": false
+  },
+  "custom/memory": {
+    "format": " {}%",
+    "interval": 5,
+    "exec": "free | awk '/Mem/ {printf(\"%.0f\", $3/$2 * 100)}'"
+  },
+  "network#speed": {
+    "interval": 1,
+    "format": " {downspeed}  {upspeed}",
+    "tooltip": false
+  },
+
+  // =========================
+  // CENTER SECTION
+  // =========================
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "default": ""
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "active": "󱓻"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+    }
+  },
+
+  // =========================
+  // RIGHT SECTION
+  // =========================
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰂎", "󰁻", "󰁽", "󰁿", "󰂁", "󰁹"],
+    "tooltip": true
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "tooltip": false
+  },
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈁  {ifname}",
+    "format-disconnected": "  Disconnected",
+    "tooltip": false
+  }
+}
+
